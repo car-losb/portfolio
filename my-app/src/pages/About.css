@@ -1,0 +1,96 @@
+.container {
+    background-color: beige;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .polaroid {
+    position: relative; /* Add position relative */
+    padding: 30px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 20%;
+    min-width: 200px; /* Adjust as needed */
+    background-color: white;
+    box-shadow: 10px 20px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    margin-left: 10%;
+    transform: rotate(-3deg);
+  }
+  
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .thumbtack {
+    position: absolute; /* Add position absolute */
+    top: 0px; /* Adjust top position as needed */
+    left: 0px; /* Adjust left position as needed */
+  }
+  
+  .thumbtack-img {
+    width: 30px; /* Adjust size as needed */
+    height: auto; /* Ensure thumbtack image maintains aspect ratio */
+  }
+  
+  .about-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex: 1; /* Take remaining space */
+  }
+
+  .about-text p {
+    line-height: 30px;
+  }
+  
+  .about-text h2 {
+    margin-top: 0; /* Remove default margin */
+  }
+
+  .about-header {
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .about-header span {
+    display: inline-block;
+    opacity: 0; /* Start with opacity 0 */
+    animation: typing 1s forwards; /* Apply typing animation */
+  }
+
+  .about-header span:last-child {
+    animation: blink 1s infinite; /* Apply blinking animation to the last span */
+  }
+
+  .highlight {
+    background-color: rgba(255, 166, 0, 0.698); /* Change background color to orange */ /* Change text color to white */
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px; /* Add padding for better visual appearance */
+  }
+
+  .underline {
+    font-weight:bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(8, 0, 255);
+  }
+
+  @keyframes typing {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 1; /* Blinking effect */
+    }
+  }
