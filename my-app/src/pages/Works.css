@@ -71,8 +71,10 @@
   }
   
   .work-image {
-    width: 100%;
-    border-radius: 10px; /* Rounded corners for the image */
+    width: 100%; /* Rounded corners for the image */
+    border-color: grey;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .thumbtack {
@@ -103,7 +105,21 @@
   .works-header:hover, .work-links li a:hover, .work-card:hover {
     cursor: pointer;
   }
+
+  .work-details {
+
+    position: relative;
+    top: 60px;
+    right: 10px; /* Adjust right position as needed */
+    transform: translateY(-50%);
+    text-align: right;
+  }
   
+  .skills,
+  .date {
+    padding: 0;
+    margin-bottom: 0px;
+  }
   
 @keyframes typing {
     from {

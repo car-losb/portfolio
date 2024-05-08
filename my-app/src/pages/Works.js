@@ -70,10 +70,31 @@ function Works({ activeWork, setActiveWork }) {
       <div className="works-content">
         {!activeWork && (
           <>
-            <WorkCard thumbtack={thumbtack} image={capeVerde} title="Cape Verdean Museum Redesign" onClick={() => handleClick('capeVerde')} />
-            <WorkCard thumbtack={thumbtack} image={eCommerce} title="Sustainable Shopping Cart" onClick={() => handleClick('eCommerce')} />
-            <WorkCard thumbtack={thumbtack} image={timeManagement} title="Time Management App" onClick={() => handleClick('timeManagement')} />
-          </>
+          <WorkCard
+            thumbtack={thumbtack}
+            image={capeVerde}
+            title="Cape Verdean Museum Redesign"
+            skills="Figma, HTML/CSS, Design"
+            date="Spring 2024"
+            onClick={() => handleClick('capeVerde')}
+          />
+          <WorkCard
+            thumbtack={thumbtack}
+            image={eCommerce}
+            title="Sustainable Shopping Cart"
+            skills="ReactJS, Node.js, Market Research"
+            date="Spring 2024"
+            onClick={() => handleClick('eCommerce')}
+          />
+          <WorkCard
+            thumbtack={thumbtack}
+            image={timeManagement}
+            title="Time Management App"
+            skills="Figma, Ethical Frameworks, AI"
+            date="Spring 2024"
+            onClick={() => handleClick('timeManagement')}
+          />
+        </>
         )}
         {activeWork === 'capeVerde' && <CapeVerdeContent />}
         {activeWork === 'eCommerce' && <ECommerceContent />}
@@ -83,7 +104,7 @@ function Works({ activeWork, setActiveWork }) {
   );
 }
 
-const WorkCard = ({ thumbtack, image, title, onClick }) => {
+const WorkCard = ({ thumbtack, image, title, skills, date, onClick }) => {
   return (
     <div className="work-card" onClick={onClick}>
       <div className="thumbtack">
@@ -91,6 +112,10 @@ const WorkCard = ({ thumbtack, image, title, onClick }) => {
       </div>
       <img src={image} alt={title} className="work-image" />
       <h3>{title}</h3>
+      <div className="work-details">
+        <p className="skills">{skills}</p>
+        <p className="date">{date}</p>
+      </div>
     </div>
   );
 };
