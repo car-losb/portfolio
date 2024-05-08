@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+  }
+  
+  .works-sidebar {
+    position: absolute;
+    left: -250px;
+    bottom: 0;
+    margin-top: 80px;
+    height: 90%;
+    width: 20%;
+    padding: 20px;
+    background-color: #1e90ff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 10px 10px 0px;/* Rounded corners */
+    color: white;
+    transition: left 0.5s ease;
+  }
+  
+  .works-sidebar.open {
+    left: 0; /* Slide in from the left */
+  }
+
+  .works-sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .work-links {
+    list-style-type: disc; /* Add bullets */
+    margin: 0;
+    padding: 0; /* Optional: Add some spacing */
+    margin-left: 10px;
+  }
+  
+  .works-sidebar ul li {
+    margin-bottom: 20px;
+  }
+  
+  .works-sidebar ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+  }
+  
+  .works-content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .work-card {
+    width: 35%;
+    min-width: 200px; /* 33.33% width with 40px margin */
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 10px 20px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+  }
+  
+  .work-card h3 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .work-image {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+
+  .thumbtack {
+    position: relative; /* Add position absolute */
+    top: -20px; /* Adjust top position as needed */
+    left: -40px; /* Adjust left position as needed */
+  }
+
+  .work-card:hover {
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  .works-header {
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .works-header span {
+    display: inline-block;
+    opacity: 0; /* Start with opacity 0 */
+    animation: typing 4s steps(40) forwards; /* Apply typing animation */
+  }
+  
+  .works-header span:last-child {
+    animation: blink 1s infinite; /* Apply blinking animation to the last span */
+  }
+
+  .works-header:hover, .work-links li a:hover, .work-card:hover {
+    cursor: pointer;
+  }
+  
+  
+@keyframes typing {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 1; /* Blinking effect */
+    }
+  }
+  

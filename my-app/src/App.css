@@ -8,6 +8,7 @@ html, body, #root, .App {
 }
 
 .navbar {
+  margin-top: 20px;
   z-index: 2;
   background-color: white;
   padding: 10px;
@@ -26,15 +27,18 @@ html, body, #root, .App {
 
 .navbar ul li {
   display: inline-block;
-  margin-left: 10px;
+  left: 0;
+  margin-right: 20px;
 }
 
+
 .navbar ul li a {
+  width: 100px;
   color: white;
   text-decoration: none;
-  padding: 5px 30px 10px;
+  padding: 20px 30px 10px;
   border-radius: 5px 5px 0 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul li:nth-child(1) a {
@@ -58,12 +62,65 @@ html, body, #root, .App {
 }
 
 .navbar ul li a:hover, .navbar ul li a.active {
-  padding-bottom: 15px; /* Change padding on hover */
+  padding-bottom: 20px; /* Change padding on hover */
   border-radius: 5px 5px 5px 5px;
 }
 
 .content {
   flex: 1;
   padding: 0px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.manila-tab {
+  position: absolute;
+  padding: 20px 40px 10px;
+  left: 0px;
+  top: 10px;
+  width: 50%; 
+  height: 30px; 
+  background-color: beige;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar ul li {
+    margin-right: 10px; /* Reduce margin between tabs for smaller screens */
+  }
+
+  .navbar ul li a {
+    padding: 20px 20px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .manila-tab {
+    width: calc(30% - 20px); /* Full width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .navbar ul li a {
+    padding: 20px 10px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .manila-tab {
+    width: calc(20% - 20px); /* Full width for smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Change flex direction to column */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .polaroid {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    margin-left: 0px;/* Add some space between polaroid and about text */
+  }
+
+  .about-text {
+    margin-left: 0; /* Reset left margin */
+  }
 }
