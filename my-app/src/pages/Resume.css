@@ -26,6 +26,10 @@
     margin-bottom: 20px;
     color: white; /* Add !important to override other rules */
   }
+
+  .resume-sidebar.open h2 {
+    font-size: calc(20px + 0.2vw);
+  }
   
   .resume-content {
     margin-left: 25%;
@@ -108,7 +112,12 @@
     margin: 0;
     padding: 0; /* Optional: Add some spacing */
     margin-left: 10px;
-    line-height: 40px;
+    font-size: calc(14px + 0.2vw);
+    
+  }
+
+  .resume-links li {
+    margin-bottom: 20px;
   }
 
   .resume-title a {
