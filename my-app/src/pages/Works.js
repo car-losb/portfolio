@@ -10,6 +10,8 @@ import lofi from '../assets/lofi-desktop.png';
 import sketches from '../assets/short-sketches.png';
 import style from '../assets/style-guide.png';
 
+import figma_lofi from '../assets/figma-lofi.png';
+
 function Works({ activeWork, setActiveWork }) { 
   const headerRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +75,7 @@ function Works({ activeWork, setActiveWork }) {
 
         </div>
         <div className="project-section">
-          <h3>Process</h3>
+          <h3>Design Process</h3>
           <p>I began by identifying key usability problems to inspire my brainstorming sketches. The page had a very long navigation bar with many different pages to choose from, none of which were organized in any particular order. 
             Gray font on dark gray banners make it difficult to distinguish text, particularly for readers with visual impairments. Finally, various sections were laid out with no direction and with little labeling.</p>
             <div className="project-subImages-container">
@@ -91,14 +93,14 @@ function Works({ activeWork, setActiveWork }) {
               </div>
         </div>
         <div className="project-section">
-          <h3>Solution</h3>
-          <p>My design adopted a color scheme inspired by the Cape Verdean flag, offering visual appeal and contrast. Many of these details are outlined in my <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0"><span className="link">style guide</span></a>:</p>
+          <h3>Figma and Prototype Solution</h3>
+          <p>My design adopted a color scheme inspired by the Cape Verdean flag, offering visual appeal and contrast. Many of these details are outlined in my <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0"><span className="link">figma style guide</span></a>:</p>
           <div className="project-subImages-container">
             <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0">
                 <img src={style} className="project-subImage"></img>
             </a>
           </div>
-          <p>As shown at the top of this page, the <a href="https://car-losb.github.io/responsive_redesign_repo/"><span className="link">redesigned webpage</span></a> features intuitive navigation, visually appealing layouts, and interactive elements showcasing Cape Verdean artifacts and history. The impact of these design choices includes increased user engagement, improved access to museum resources, and enhanced cultural representation online.</p>
+          <p>As shown at the top of this page, the <a href="https://car-losb.github.io/responsive_redesign_repo/"><span className="link">redesigned webpage</span></a> features intuitive navigation, visually appealing layouts, and interactive elements showcasing Cape Verdean artifacts and history using HTML/CSS. The impact of these design choices includes increased user engagement, improved access to museum resources, and enhanced cultural representation online.</p>
         </div>
         <div className="project-section">
           <h3>Learnings</h3>
@@ -109,61 +111,210 @@ function Works({ activeWork, setActiveWork }) {
   );
   
   const ECommerceContent = () => (
-    <div>
-      <h2>Sustainable Shopping Cart</h2>
-      <div className="project-section">
-        <h3>Context/Problem</h3>
-        <p>Traditional e-commerce platforms often neglect environmental sustainability, contributing to ecological harm through excessive packaging and carbon emissions. There was a need for a sustainable shopping cart solution that integrates eco-friendly practices into the shopping experience.</p>
-      </div>
-      <div className="project-section">
-        <h3>Research</h3>
-        <p>Conducted market research to understand consumer preferences for sustainable products and environmentally conscious shopping behaviors. Target audience comprises environmentally conscious consumers seeking eco-friendly alternatives in their purchasing decisions.</p>
-      </div>
-      <div className="project-section">
-        <h3>Process</h3>
-        <p>Explored various design approaches, considering factors such as product lifecycle, packaging materials, and supply chain transparency. Tradeoffs included balancing sustainability goals with cost-effectiveness and scalability. Prioritized user education and transparent communication of sustainability features.</p>
-      </div>
-      <div className="project-section">
-        <h3>Solution</h3>
-        <p>Developed an e-commerce platform with features like product eco-labels, carbon footprint tracking, and sustainable packaging options. The solution empowers users to make informed, environmentally conscious purchasing decisions, contributing to a greener future.</p>
-      </div>
-      <div className="project-section">
-        <h3>Learnings</h3>
-        <p>Gained insights into sustainable design principles and the role of technology in promoting environmental stewardship. Lessons learned include the importance of collaboration across supply chains and the potential for technology to drive positive social and environmental change.</p>
-      </div>
-      <div className="project-section">
-        <h3>Role</h3>
-        <p>Played a key role in the design and development of the sustainable shopping cart platform, collaborating with sustainability experts, developers, and retailers to implement innovative eco-friendly features.</p>
+    <div className="cape-verde-content">
+      <div className="project-header">
+        <img src={thumbtack} alt="Thumbtack" className="work-thumbtack-img" />
+        <h2>Sustainable E-Commerce Shopping Cart</h2>
+
+        <a href="https://development-project-ten.vercel.app/">
+          <img src={eCommerce} className="project-image" alt="Sustainable E-Commerce Shopping Cart" />
+        </a>
+        <div className="project-details">
+          <div className="project-section context">
+            <h3>Context/Problem</h3>
+            <p>Traditional e-commerce adopt various UI features to optimize conversion rates and enhance user experiences. This project contributes to the integration of user-focused e-commerce features to enhance sustainable shopping experience.</p>
+          </div>
+          <div className="project-section role"> {/* Assigned class 'role' */}
+            <h3>Role</h3>
+            <p>UI/UX Researcher, Designer, Engineer</p>
+          </div>
+          <div className="project-section timeline"> {/* Assigned class 'timeline' */}
+            <h3>Timeline</h3>
+            <p>3 Weeks</p>
+          </div>
+          </div>
+        </div>
+        <div className="project-body">
+        <div className="project-section">
+          <h3>Research</h3>
+          <p>
+            I was inspired by recent movements for sustainable online retail, such as <a href="https://www.trashie.io/new-home"><span className="link">Trashie</span></a>, and chose to focus my research on online clothing retail platforms.
+          </p>
+
+          <p>
+          I performed a competitive analysis comparing differing list and aggregator features from the following top fast-fashion retailers: 
+          <a href="https://us.shein.com/?url_from=usgooglebrandshein_sheinshein_srsa_20210930&cid=370313608&setid=25652838688&adid=549022341969&pf=GOOGLE&gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQARegFpqaRknuQC8uptcpHKhGd2X-8MbiSGO8AUlzTrr6KYr47gcyERoCo0wQAvD_BwE">
+          <span className="link"> Shein</span></a>, <a href="https://www.temu.com/"><span className="link">Temu</span></a>, and <a href="https://www.wish.com/feed/reach-cids-000000000000000000000000-from_ad-19808826207?filter=reach-cids-000000000000000000000000-from_ad-19808826207&utm_source=ggl&utm_medium=pmax&utm_campaign=19808826207&from_ad=19808826207&gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQAYW56onIhzfJ1L_1AZWpdqLHLJMyF5WMuAyoWKWXD7F3i4KDzTR2WhoC7vUQAvD_BwE&hide_login_modal=true">
+          <span className="link">Wish</span></a>.
+          </p>
+
+          <div class="table_section">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Shein</th>
+                    <th>Temu</th>
+                    <th>Wish</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Categorical Sorting (Article of Clothing)</strong></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td><strong>Cart Pop-Up</strong></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Cart Quick-Add</strong></td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>Price Filtering</strong></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong>1-Click-Buy </strong></td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+        </div>
+
+        </div>
+        <div className="project-section">
+          <h3>Design Process</h3>
+          <p>
+            I chose to implement a second-hand clothing shopping experience for users called "Eco-Fashion". Below are the major features I chose to incorporate, many of which were inspired by my competitive research analysis:
+          </p>
+
+          <ul>
+            <li><strong>Clothing Article Filtering</strong> - Users can filter list results by clothing type</li>
+            <li><strong>Maximum Price Filtering</strong> - Items can be filtered according to a maximum price slider</li>
+            <li><strong>Price Sorting</strong> - Items list can be sorted by price from cheapest to most expensive</li>
+            <li><strong>Cart Pop-Up</strong> - A user's shopping cart is displayed adjacent to the clothing items as they shop</li>
+            <li><strong>Cart Quick-Add Button</strong> - Users can add an item to their card with the press of a button without having to switch windows/screens</li>
+            <li><strong>Remove Item/Clear Cart Button</strong> - Users can remove a single type of item from a cart or clear their cart completely as they shop</li>
+          </ul>
+
+          <p>
+          Before starting development I decided to create a <a href="https://www.figma.com/design/pVeVTdgRlPiCEHQc4Hphx7/Development-Lofi-Mockup?node-id=0-1&t=C7UZ7siQsUt50Jcn-0"><span className="link">low fidelity wireframe</span></a> on figma to get a better sense of the structure I wanted for my webpage. 
+          </p>
+
+            <div className="project-subImages-container">
+              <a href="https://www.figma.com/design/pVeVTdgRlPiCEHQc4Hphx7/Development-Lofi-Mockup?node-id=0-1&t=C7UZ7siQsUt50Jcn-0">
+                <img src={figma_lofi} className="project-subImage"></img>
+              </a>
+            </div>
+
+            <p>In the theme of sustainability, I opted for greens and natural oranges for the color scheme, making sure to create enough contrast to ensure accessibility.</p>
+        </div>
+        <div className="project-section">
+          <h3>Figma and Prototype Solution</h3>
+          <p>In the theme of sustainability, I opted for greens and natural oranges for the color scheme, making sure to create enough contrast to ensure accessibility.</p>
+          <p>As shown at the top of this page, the <a href="https://development-project-ten.vercel.app/"><span className="link">final prototype</span></a> features an intuitive navigation hierarchy, visually contrasting interface elements, and several user-focused shopping tool features created using ReactJS.</p>
+        </div>
+        <div className="project-section">
+          <h3>Learnings</h3>
+          <p>Throughout the development of the Sustainable Shopping Cart project, I gained valuable insights into several aspects of e-commerce design and development, as well as sustainability in online retail:</p>
+          <ul>
+            <li><strong>User-Centered Design:</strong> Understanding the importance of user-centered design principles was crucial in creating an intuitive and engaging shopping experience for users.</li>
+            <li><strong>Sustainability:</strong> Exploring sustainable design principles and incorporating marketing and UI/UX strategies targeted to eco-friendly consumers.</li>
+            <li><strong>Iterative Development:</strong> Adopting an iterative development approach allowed for continuous improvement and refinement of the prototype.</li>
+          </ul>
+          <p>These learnings have not only enhanced my technical skills but also broadened my understanding of the intersection between technology, design, and sustainability in the context of e-commerce.</p>
+        </div>
       </div>
     </div>
   );
   
   const TimeManagementContent = () => (
-    <div>
-      <h2>Time Management App</h2>
-      <div className="project-section">
-        <h3>Context/Problem</h3>
-        <p>Modern lifestyles are increasingly hectic, leading to challenges in time management and productivity. There was a need for a time management app to help users organize tasks, prioritize work, and improve productivity.</p>
-      </div>
-      <div className="project-section">
-        <h3>Research</h3>
-        <p>Conducted user surveys and interviews to understand common time management challenges and user preferences for productivity tools. Identified the target audience as professionals, students, and individuals seeking effective time management solutions.</p>
-      </div>
-      <div className="project-section">
-        <h3>Process</h3>
-        <p>Iterated through design prototypes, incorporating feedback from beta testers and usability studies. Tradeoffs included balancing feature complexity with ease of use and ensuring compatibility across different devices and operating systems. Prioritized intuitive interfaces and customizable features.</p>
-      </div>
-      <div className="project-section">
-        <h3>Solution</h3>
-        <p>Developed a time management app with features such as task prioritization, progress tracking, and personalized productivity insights. The solution empowers users to optimize their time, achieve their goals, and maintain a healthy work-life balance.</p>
-      </div>
-      <div className="project-section">
-        <h3>Learnings</h3>
-        <p>Learned valuable lessons about user behavior and preferences in time management tools, as well as the importance of data privacy and security in app development. Insights gained include the significance of habit formation and behavioral psychology in designing effective productivity solutions.</p>
-      </div>
-      <div className="project-section">
-        <h3>Role</h3>
-        <p>Led the design and development of the time management app as part of a cross-functional team, collaborating with software engineers, UX researchers, and behavioral scientists to create a user-centric solution.</p>
+    <div className="cape-verde-content">
+      <div className="project-header">
+        <img src={thumbtack} alt="Thumbtack" className="work-thumbtack-img" />
+        <h2>TimeWise: An Ethical Time Management App</h2>
+
+        <a href="https://car-losb.github.io/responsive_redesign_repo/">
+          <img src={timeManagement} className="project-image" alt="Cape Verdean Museum" />
+        </a>
+        <div className="project-details">
+          <div className="project-section context">
+            <h3>Context/Problem</h3>
+            <p>TimeWise is a time management application designed to help users effectively manage their tasks and optimize their productivity. The project involved the development of various features aimed at empowering users to take control of their time and achieve their goals.</p>
+          </div>
+          <div className="project-section role"> {/* Assigned class 'role' */}
+            <h3>Role</h3>
+            <p>Ethicist, Auditor, Designer</p>
+          </div>
+          <div className="project-section timeline"> {/* Assigned class 'timeline' */}
+            <h3>Timeline</h3>
+            <p>2 Weeks</p>
+          </div>
+          </div>
+        </div>
+        <div className="project-body">
+        <div className="project-section">
+          <h3>Research</h3>
+          <p>I performed a market analysis to identify some of the leading time management softwares/apps:
+          <a href="https://hourstack.com/">
+          <span className="link"> Hour Stack</span></a>, <a href="https://toggl.com/"><span className="link">Toggl Track</span></a>, and <a href="https://timelyapp.com/home-v3">
+          <span className="link">Timely</span></a>.
+          </p>
+          <p>
+            From the competitive research, I identified key philosophical principles to create a time management app that respects the wishes of user and enables them to manage their time as they intend:
+          </p>
+          <ul>
+            <li><strong>User Autonomy:</strong> Understanding the importance of user-centered design principles was crucial in creating an intuitive and engaging shopping experience for users.</li>
+            <li><strong>Data Privacy:</strong> Exploring sustainable design principles and incorporating marketing and UI/UX strategies targeted to eco-friendly consumers.</li>
+            <li><strong>Transparency:</strong> Adopting an iterative development approach allowed for continuous improvement and refinement of the prototype.</li>
+          </ul>
+
+        </div>
+        <div className="project-section">
+          <h3>Design Process</h3>
+          <p>I began by identifying key usability problems to inspire my brainstorming sketches. The page had a very long navigation bar with many different pages to choose from, none of which were organized in any particular order. 
+            Gray font on dark gray banners make it difficult to distinguish text, particularly for readers with visual impairments. Finally, various sections were laid out with no direction and with little labeling.</p>
+            <div className="project-subImages-container">
+              <a href="https://drive.google.com/file/d/1JmxZlRM1sCaEki9zi2KV7UWsXqhYf4Q8/view">
+                <img src={sketches} className="project-subImage"></img>
+              </a>
+            </div>
+
+            <p>In these designs, I attempted to reorganize the navigation links and create a more cohesive flow throughout the webpage. 
+              I identified key areas in the webpage that I felt were important to highlight in my low fidelity mockup: <strong>navigation bars, mission statements, events schedule, hours/location, and outreach resources (social media, newsletter, etc).</strong></p>
+              <div className="project-subImages-container">
+                <a href="https://drive.google.com/file/d/1RV4T_Pv68LZGConkzrkt6y2u8s9BP85a/view">
+                  <img src={lofi} className="project-subImage"></img>
+                </a>
+              </div>
+        </div>
+        <div className="project-section">
+          <h3>Figma and Prototype Solution</h3>
+          <p>My design adopted a color scheme inspired by the Cape Verdean flag, offering visual appeal and contrast. Many of these details are outlined in my <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0"><span className="link">figma style guide</span></a>:</p>
+          <div className="project-subImages-container">
+            <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0">
+                <img src={style} className="project-subImage"></img>
+            </a>
+          </div>
+          <p>As shown at the top of this page, the <a href="https://car-losb.github.io/responsive_redesign_repo/"><span className="link">redesigned webpage</span></a> features intuitive navigation, visually appealing layouts, and interactive elements showcasing Cape Verdean artifacts and history using HTML/CSS. The impact of these design choices includes increased user engagement, improved access to museum resources, and enhanced cultural representation online.</p>
+        </div>
+        <div className="project-section">
+          <h3>Learnings</h3>
+          <p>This project highlighted the importance of user-centered design principles, including responsiveness and accessbilility, as well as the value of iterative design processes in addressing complex usability challenges. The impact of this design underscores the significant role of digital platforms in preserving and promoting heritage.</p>
+        </div>
       </div>
     </div>
   );
