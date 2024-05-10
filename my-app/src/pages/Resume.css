@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+  }
+
+.resume-sidebar {
+    position: fixed;
+    left: -250px;
+    bottom: 0;
+    top: 80px;
+    width: 20%;
+    padding: 20px;
+    background-color: #32cd32;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 10px 10px 0;
+    color: white;
+    transition: left 0.5s ease;
+    z-index: 1000;
+  }
+  
+  .resume-sidebar.open {
+    left: 0;
+  }
+
+  .resume-header {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white; /* Add !important to override other rules */
+  }
+  
+  .resume-content {
+    margin-left: 25%;
+    padding: 20px;
+  }
+  
+
+  .resume-header blink {
+    display: inline-block;
+    opacity: 0; /* Start with opacity 0 */
+    animation: typing 4s steps(40) forwards; 
+    color: red;/* Apply typing animation */
+  }
+  
+  .resume-header blink:last-child {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes typing {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .resume-sidebar:hover,
+  .resume-links li a:hover {
+    cursor: pointer;
+  }
+
+  .resume-title {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .resume-content h2 {
+    background-color: rgba(255, 166, 0, 0.587);
+    padding: 0px;
+    border-bottom: 1px solid #ccc; /* Add a horizontal line under each h2 */
+    padding-bottom: 10px;
+    padding-top: 10px; /* Add some spacing between the header and the line */
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+
+  .courses {
+    font-style:italic;
+  }
+
+  .resume-content h1 {
+    border-bottom: 1px solid red;
+  }
+
+  .resume-title p {
+    border-bottom: 1px solid navy;
+  }
+
+  .index-card {
+    color: white;
+  }
+
+  .resume-title img{
+    position: relative; /* Add position absolute */
+    left: -50%;
+    top: -10px; /* Adjust left position as needed */
+  }
+
+  .resume-links {
+    list-style-type: disc; /* Add bullets */
+    margin: 0;
+    padding: 0; /* Optional: Add some spacing */
+    margin-left: 10px;
+    line-height: 40px;
+  }
+
+  .resume-title a {
+    color: red;
+    text-decoration: none; /* Remove underline */
+  }
+
+  .resume-header blink {
+    color: red;
+  }

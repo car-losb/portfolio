@@ -3,10 +3,10 @@
   }
   
   .works-sidebar {
-    position: absolute;
+    position: fixed;
     left: -250px;
     bottom: 0;
-    margin-top: 80px;
+    top: 80px;
     height: 90%;
     width: 20%;
     padding: 20px;
@@ -15,7 +15,9 @@
     border-radius: 0px 10px 10px 0px;/* Rounded corners */
     color: white;
     transition: left 0.5s ease;
-  }
+    z-index: 4000;
+  } 
+
   
   .works-sidebar.open {
     left: 0; /* Slide in from the left */

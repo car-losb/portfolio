@@ -1,0 +1,141 @@
+.socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    background-color: beige; 
+  }
+  
+  .social-index-card {
+    background-color: pink;
+    padding: 20px;
+    width: 50%;
+    min-width: 350px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4000;
+    margin-top: 20px;
+    box-shadow: 10px 20px 16px rgba(0, 0, 0, 0.2);
+    position: relative; /* Add relative positioning */
+  }
+  
+  .social-icons {
+    position: absolute;
+    bottom: 40%; /* Adjust vertical position */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .social-icon {
+    width: 60px;
+    min-width: 60px;
+    height: auto;
+    margin: 0 3%;
+  }
+  
+  .socials-container .about-header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+  }
+  
+  .socials-container p {
+    color: pink;
+    margin: 10px;
+    width: 100%;
+    border-bottom: 1px solid navy;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.3); /* Grow a little on hover */
+  }
+  
+  .paperclip {
+    position: absolute;
+    width: 300px;
+    top: -130px; /* Adjust vertical position */
+    left: -104px; /* Adjust horizontal position */
+    z-index: 5000; /* Ensure it's above the social icons */
+    transform: rotate(-80deg);
+  }
+
+  .social-index-card:hover {
+    transform: rotate(-10deg); /* Rotate to the left on hover */
+  }
+
+/* .socials-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    background-color: beige; 
+  }
+  
+  .social-index-card {
+    background-color: pink;
+    padding: 20px;
+    width: 50%;
+    min-width: 350px;
+    height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4000;
+    margin-top: 20px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .social-icons {
+    position: absolute; 
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .social-icon {
+    position: relative;
+    top: 0;
+    width: 60px;
+    min-width: 60px;
+    height: auto;
+    margin: 0 3%;
+  }
+  
+  .socials-container .about-header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 30px;
+    color: white;
+  }
+
+  .socials-container p {
+    color: pink;
+    margin: 10px;
+    width: 100%;
+    border-bottom: 1px solid navy;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.3);
+  }
+
+  .paperclip {
+    position: absolute;
+    width: 200px;
+    top: 0; 
+    left: 0; 
+  } */
