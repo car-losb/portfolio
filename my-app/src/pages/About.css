@@ -80,8 +80,6 @@
 
   .underline {
     font-weight:bold;
-    text-decoration: underline;
-    text-decoration-color: rgb(8, 0, 255);
   }
 
   @keyframes typing {

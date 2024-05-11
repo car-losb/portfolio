@@ -34,10 +34,17 @@ function Resume() {
     }
   };
 
+  const scrollToResumeTitle = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className="container">
       <div className={isOpen ? "resume-sidebar open" : "resume-sidebar"}>
-        <h2 ref={headerRef} className="about-header">Resume...<span className="blink">|</span></h2>
+        <h2 ref={headerRef} className="about-header" onClick={scrollToResumeTitle}>Resume...<span className="blink">|</span></h2>
         <ul className="resume-links">
           <li onClick={() => handleLinkClick('education')}>Education</li>
           <li onClick={() => handleLinkClick('skills-interests')}>Skills & Interests</li>

@@ -11,6 +11,11 @@ import sketches from '../assets/short-sketches.png';
 import style from '../assets/style-guide.png';
 
 import figma_lofi from '../assets/figma-lofi.png';
+import data from '../assets/data.png';
+import restrictions from '../assets/nada.png';
+import objectives from '../assets/objectives.png';
+
+import wireframe from '../assets/wireframe.png';
 
 function Works({ activeWork, setActiveWork }) { 
   const headerRef = useRef(null);
@@ -104,7 +109,7 @@ function Works({ activeWork, setActiveWork }) {
         </div>
         <div className="project-section">
           <h3>Learnings</h3>
-          <p>This project highlighted the importance of user-centered design principles, including responsiveness and accessbilility, as well as the value of iterative design processes in addressing complex usability challenges. The impact of this design underscores the significant role of digital platforms in preserving and promoting heritage.</p>
+          <p>Working on this project as a UX Researcher and Engineer highlighted the importance of user-centered design principles, including responsiveness and accessbilility, as well as the value of iterative design processes in addressing complex usability challenges. The impact of this design underscores the significant role of digital platforms in preserving and promoting heritage.</p>
         </div>
       </div>
     </div>
@@ -235,7 +240,7 @@ function Works({ activeWork, setActiveWork }) {
             <li><strong>Sustainability:</strong> Exploring sustainable design principles and incorporating marketing and UI/UX strategies targeted to eco-friendly consumers.</li>
             <li><strong>Iterative Development:</strong> Adopting an iterative development approach allowed for continuous improvement and refinement of the prototype.</li>
           </ul>
-          <p>These learnings have not only enhanced my technical skills but also broadened my understanding of the intersection between technology, design, and sustainability in the context of e-commerce.</p>
+          <p>As a Designer and Engineer, this project not only enhanced my technical skills but also broadened my understanding of the intersection between technology, design, and sustainability in the context of e-commerce.</p>
         </div>
       </div>
     </div>
@@ -274,7 +279,7 @@ function Works({ activeWork, setActiveWork }) {
           <span className="link">Timely</span></a>.
           </p>
           <p>
-            From the competitive research, I identified key philosophical principles to create a time management app that respects the wishes of user and enables them to manage their time as they intend:
+            From the competitive research, I identified key philosophical principles to emphasize when creating a time management app that respects the wishes of user and enables them to manage their time as they intend:
           </p>
           <ul>
             <li><strong>User Autonomy:</strong> Understanding the importance of user-centered design principles was crucial in creating an intuitive and engaging shopping experience for users.</li>
@@ -285,35 +290,39 @@ function Works({ activeWork, setActiveWork }) {
         </div>
         <div className="project-section">
           <h3>Design Process</h3>
-          <p>I began by identifying key usability problems to inspire my brainstorming sketches. The page had a very long navigation bar with many different pages to choose from, none of which were organized in any particular order. 
-            Gray font on dark gray banners make it difficult to distinguish text, particularly for readers with visual impairments. Finally, various sections were laid out with no direction and with little labeling.</p>
-            <div className="project-subImages-container">
-              <a href="https://drive.google.com/file/d/1JmxZlRM1sCaEki9zi2KV7UWsXqhYf4Q8/view">
-                <img src={sketches} className="project-subImage"></img>
+          <p>I wanted to address three main user pain points: <strong>privacy concerns, app-related distractions, and being able to quantify progress</strong>. My product's following features are aimed to remedy these issues:</p>
+          <ul>
+            <li><strong>Data Analytics:</strong> This feature collects a users' behaviors and time spent on certain apps or tasks to better measure their time management effectiveness.</li>
+            <li><strong>Objectives:</strong> Users can define objectives for themselves that allows them to shape their time management journey, the app collects data that allows AI suggested objectives based on previous user behavior.</li>
+            <li><strong>App Restrictions:</strong> To provide users with greater autonomy, they are able to restrict access to specific apps on their phone according to time limits they define.</li>
+          </ul>
+            <div className="project-subImages-container time">
+              <a href="https://www.figma.com/design/7rAhHYF2uw5JId1kZxRsdv/Untitled?node-id=0-1&t=0HeCyjVjzvf7W8Tw-0">
+                <img src={data} className="time-img"></img>
+                <img src={objectives} className="time-img"></img>
+                <img src={restrictions} className="time-img"></img>
               </a>
             </div>
 
-            <p>In these designs, I attempted to reorganize the navigation links and create a more cohesive flow throughout the webpage. 
-              I identified key areas in the webpage that I felt were important to highlight in my low fidelity mockup: <strong>navigation bars, mission statements, events schedule, hours/location, and outreach resources (social media, newsletter, etc).</strong></p>
-              <div className="project-subImages-container">
-                <a href="https://drive.google.com/file/d/1RV4T_Pv68LZGConkzrkt6y2u8s9BP85a/view">
-                  <img src={lofi} className="project-subImage"></img>
-                </a>
-              </div>
+            <p>Once I defined minimum requirements for the product, I created a workflow of the app, emphasizing user behavior and intuition. In an effort to enhance user autonomy, I adopted a color scheme of soft greens
+              and used passive language in order to avoid aggressive nudging. 
+            </p>
+
         </div>
         <div className="project-section">
           <h3>Figma and Prototype Solution</h3>
-          <p>My design adopted a color scheme inspired by the Cape Verdean flag, offering visual appeal and contrast. Many of these details are outlined in my <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0"><span className="link">figma style guide</span></a>:</p>
+          <p>The <a href="https://www.figma.com/design/7rAhHYF2uw5JId1kZxRsdv/Untitled?node-id=0-1&t=0HeCyjVjzvf7W8Tw-0"><span className="link">wireframe</span></a> below outlines the different screens on the app, including the aforementioned features.
+            Users are provided with the tools to set time management goals for themselves, measure their achievements, and limit the granularity and access to their data.</p>
           <div className="project-subImages-container">
-            <a href="https://www.figma.com/design/1mqlHE57qRwcseX4OVFHLp/Untitled?node-id=3-174&t=UUZYwATBzENVr5C4-0">
-                <img src={style} className="project-subImage"></img>
-            </a>
-          </div>
-          <p>As shown at the top of this page, the <a href="https://car-losb.github.io/responsive_redesign_repo/"><span className="link">redesigned webpage</span></a> features intuitive navigation, visually appealing layouts, and interactive elements showcasing Cape Verdean artifacts and history using HTML/CSS. The impact of these design choices includes increased user engagement, improved access to museum resources, and enhanced cultural representation online.</p>
+                <a href="https://www.figma.com/design/7rAhHYF2uw5JId1kZxRsdv/Untitled?node-id=0-1&t=0HeCyjVjzvf7W8Tw-0">
+                  <img src={wireframe} className="project-subImage"></img>
+                </a>
+              </div>
+          <p>The design adopts language and disclosures in order ot provide users with transparency regarding the use of their data and the purpose of certain app features. Additionally, it is important to note the <strong>privacy considerations</strong> made throughout the product's design. Users are given several settings features from which they can dictate the use of certain features and dictate the collection of their data.</p>
         </div>
         <div className="project-section">
           <h3>Learnings</h3>
-          <p>This project highlighted the importance of user-centered design principles, including responsiveness and accessbilility, as well as the value of iterative design processes in addressing complex usability challenges. The impact of this design underscores the significant role of digital platforms in preserving and promoting heritage.</p>
+          <p>As the leading Ethicist and Designer for this project, I explored the intersection of ethical frameworking and product development while learning the importance of <strong>user privacy, autonomy, and transparency</strong>. This app provided insight into the user considerations and ethical responsibilities of tech developers when it comes to shaping user behavior. </p>
         </div>
       </div>
     </div>
@@ -321,6 +330,12 @@ function Works({ activeWork, setActiveWork }) {
 
   const handleClick = (work) => {
     setActiveWork(work); // Toggle activeWork
+  
+    // Scroll to the top of the page
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
