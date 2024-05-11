@@ -30,6 +30,7 @@ function About() {
           <img src={thumbtack} alt="Thumbtack" className="thumbtack-img" />
         </div>
         <img src={profilePic} alt="Profile" className="profile-pic" />
+        <div className="label">Seattle, WA ~ 2022</div> {/* New label */}
       </div>
       <div className="about-text">
       <h2 ref={headerRef} className="about-header">About&nbsp;Me...<span className="blink">|</span></h2>

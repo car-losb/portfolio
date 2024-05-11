@@ -82,6 +82,17 @@
     font-weight:bold;
   }
 
+  .label {
+    position: absolute;
+    bottom: 30px;
+    right: -50px;
+    transform: translateX(-50%);
+    font-size: 15px;
+    text-align: center;
+    color: black;
+  }
+
+
   @keyframes typing {
     from {
         opacity: 1;
@@ -94,5 +105,16 @@
   @keyframes blink {
     50% {
       opacity: 1; /* Blinking effect */
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .polaroid {
+      padding-bottom: 110px;
+      padding-right: 70px;
+      padding-left: 70px;
+    }
+    .label {
+     bottom: 10px; 
     }
   }
