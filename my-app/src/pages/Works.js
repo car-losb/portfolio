@@ -252,8 +252,8 @@ function Works({ activeWork, setActiveWork }) {
         <img src={thumbtack} alt="Thumbtack" className="work-thumbtack-img" />
         <h2>TimeWise: An Ethical Time Management App</h2>
 
-        <a href="https://car-losb.github.io/responsive_redesign_repo/">
-          <img src={timeManagement} className="project-image" alt="Cape Verdean Museum" />
+        <a href="https://www.figma.com/design/7rAhHYF2uw5JId1kZxRsdv/Untitled?node-id=0-1&t=0HeCyjVjzvf7W8Tw-0">
+          <img src={timeManagement} className="project-image" alt="Time Management App" />
         </a>
         <div className="project-details">
           <div className="project-section context">
